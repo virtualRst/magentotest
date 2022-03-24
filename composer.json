@@ -1,0 +1,14 @@
+{
+    "name": "rishabh/magnetotest",
+    "type": "magento-plugin",
+    "authors": [
+        {
+            "name": "virtualrst",
+            "email": "rishabhtiwari821@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "files":["registration.php"]
+    }
+}
