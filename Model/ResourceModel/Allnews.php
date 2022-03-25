@@ -1,5 +1,6 @@
 <?php
 namespace Rst\Magentotest\Model\ResourceModel;
+
 use Magento\Framework\Model\AbstractModel;
 
 class Allnews extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb

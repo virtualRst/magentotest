@@ -60,7 +60,7 @@ class InstallSchema implements InstallSchemaInterface
                 'Updated At'
           )
           ->addIndex(
-            $setup->getIdxName('rsgitech_news', ['title']),
+            $setup->getIdxName('magetest_news', ['title']),
             ['title']
           )
           ->setComment("News Table");
