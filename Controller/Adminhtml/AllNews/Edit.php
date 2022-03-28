@@ -4,6 +4,10 @@ use Magento\Backend\App\Action;
 class Edit extends \Magento\Backend\App\Action{
     protected $_coreRegistry;
     protected $resultPageFactory;
+    protected function _isAllowed()
+	{
+		return $this->_authorization->isAllowed('Rst_Magentotest::save');
+	}
     public function __construct(
         Action\Context $context,
         \Magento\Framework\View\Result\PageFactory $resultPageFactory,

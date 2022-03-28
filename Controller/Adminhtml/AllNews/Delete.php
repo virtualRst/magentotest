@@ -2,6 +2,10 @@
 namespace Rst\Magentotest\Controller\Adminhtml\Allnews;
 
 class Delete extends \Magento\Backend\App\Action {
+    protected function _isAllowed()
+	{
+		return $this->_authorization->isAllowed('Rst_Magentotest::news_delete');
+	}
     public function execute(){
         $id=$this->getRequest()->getParam('news_id');
         $resultRedirect=$this->resultRedirectFactory->create();
