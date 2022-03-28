@@ -51,7 +51,7 @@ class Save extends \Magento\Backend\App\Action
      */
 	protected function _isAllowed()
 	{
-		return $this->_authorization->isAllowed('Magetest_News::save');
+		return $this->_authorization->isAllowed('Rst_Magentotest::save');
 	}
 
     /**

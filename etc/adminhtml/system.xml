@@ -8,7 +8,7 @@
             <class>magetest-separator</class>
             <label>News</label>
             <tab>magetest</tab>
-            <resource>Magetest_News::news_config</resource>
+            <resource>Rst_Magentotest::news_config</resource>
             <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
                 <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">

@@ -6,12 +6,12 @@ class Allnews extends \Magento\Backend\Block\Widget\Grid\Container
     protected function _construct()
     {
         $this->_controller = 'adminhtml_allnews';
-        $this->_blockGroup = 'Magetest_News';
+        $this->_blockGroup = 'Rst_Magentotest';
         $this->_headerText = __('Manage News');
 
         parent::_construct();
 
-        if ($this->_isAllowedAction('Magetest_News::save')) {
+        if ($this->_isAllowedAction('Rst_Magentotest::save')) {
             $this->buttonList->update('add', 'label', __('Add News'));
         } else {
             $this->buttonList->remove('add');
