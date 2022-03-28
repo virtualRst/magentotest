@@ -3,7 +3,7 @@
     <system>
         <tab id="magetest" translate="label" sortOrder="250">
             <label>Magetest</label>
-        </tab>
+        </tab>      
         <section id="magetest_news" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>magetest-separator</class>
             <label>News</label>

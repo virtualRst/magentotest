@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
+
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Rst\Magentotest\Api\Data\AllnewsInterface" type="Rst\Magentotest\Model\Allnews" />
+	<preference for="Rst\Magentotest\Api\AllnewsRepositoryInterface" type="Rst\Magentotest\Model\AllnewsRepository" />
 	<virtualType name="AllnewsGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
         <arguments>
             <argument name="collection" xsi:type="object" shared="false">Rst\Magentotest\Model\ResourceModel\Allnews\Collection</argument>
@@ -18,6 +21,13 @@
             <argument name="eventPrefix" xsi:type="string">magetest_news_grid_collection</argument>
             <argument name="eventObject" xsi:type="string">magetest_news_collection</argument>
             <argument name="resourceModel" xsi:type="string">Rst\Rst\Model\ResourceModel\Allnews</argument>
+        </arguments>
+    </type>
+	<type name="Magento\Framework\Model\Entity\RepositoryFactory">
+        <arguments>
+            <argument name="entities" xsi:type="array">
+                <item name="Rst\Magentotest\Api\Data\AllnewsInterface" xsi:type="string">Rst\Magentotest\Api\AllnewsRepositoryInterface</item>
+            </argument>
         </arguments>
     </type>
 </config>
